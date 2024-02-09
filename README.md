@@ -3,6 +3,10 @@
 Repository mod sebagai arsip Sharing Session WPU oleh PixelSam123.
 Tema mod ini adalah block-block dan item-item Pyro.
 
+## File teksturnya dimana Bang?
+
+Download [di sini](https://drive.google.com/drive/folders/1E_iGMhLY1nH-0yrVKax6AqTVcVadm7O1?usp=sharing)
+
 ## Versi Minecraft
 
 1.20.4
