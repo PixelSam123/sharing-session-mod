@@ -13,8 +13,14 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class Blocks {
-    public static final Block PYRO_ORE = registerBlock("pyro_ore",
+    public static final Block PYRO_ORE = registerBlock(
+        "pyro_ore",
         new Block(FabricBlockSettings.copyOf(net.minecraft.block.Blocks.IRON_ORE).strength(8f))
+    );
+
+    public static final Block PYRO_BLOCK = registerBlock(
+        "pyro_block",
+        new Block(FabricBlockSettings.copyOf(net.minecraft.block.Blocks.IRON_BLOCK).strength(12f))
     );
 
     /**
@@ -44,6 +50,9 @@ public class Blocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(PYRO_ORE);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.add(PYRO_BLOCK);
         });
 
         SharingSession.LOGGER.info("Selesai menginisialisasi Block-block!");
