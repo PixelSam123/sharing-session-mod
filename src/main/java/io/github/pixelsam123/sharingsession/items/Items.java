@@ -13,6 +13,9 @@ public class Items {
     public static final Item PYRO_INGOT =
         registerItem("pyro_ingot", new Item(new FabricItemSettings()));
 
+    public static final Item PYRO_SWORD =
+        registerItem("pyro_sword", new Item(new FabricItemSettings()));
+
     /**
      * Fungsi pembantu untuk registrasi item.
      */
@@ -29,6 +32,9 @@ public class Items {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PYRO_INGOT);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(PYRO_SWORD);
         });
 
         SharingSession.LOGGER.info("Selesai menginisialisasi Item-item!");
