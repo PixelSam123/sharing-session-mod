@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sharingsession",
+	"version": "${version}",
+	"name": "Sharing Session Mod",
+	"description": "",
+	"authors": [
+		"PixelSam123"
+	],
+	"contact": {
+		"homepage": "https://pixelsam123.github.io",
+		"sources": "https://github.com/pixelsam123/sharing-session-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/sharingsession/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.pixelsam123.sharingsession.SharingSession"
+		],
+		"client": [
+			"io.github.pixelsam123.sharingsession.SharingSessionClient"
+		]
+	},
+	"mixins": [
+		"sharingsession.mixins.json",
+		{
+			"config": "sharingsession.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+	}
+}
