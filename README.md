@@ -11,6 +11,11 @@ Download [di sini](https://drive.google.com/drive/folders/1E_iGMhLY1nH-0yrVKax6A
 
 1.20.4
 
+## RESOURCES!
+
+- [Download aset Minecraft](https://mcasset.cloud)
+- [VSCode Extensions Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+
 ## Langkah Inisialisasi!
 
 1. Download ZIP [FabricMC/fabric-example-mod](https://github.com/FabricMC/fabric-example-mod)
